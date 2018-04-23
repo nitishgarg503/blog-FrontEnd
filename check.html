@@ -1,0 +1,268 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./bootstrap/4.0.0/css/bootstrap.min.css">
+           <script src="./jquery/jquery-3.3.1.slim.min.js" ></script>
+     
+     <script src="./bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+
+    <title>About</title>
+      <style>
+         .container-fluid{
+              background-image: url(about.jpg);
+              background-repeat: no-repeat;
+              width:100%;
+             background-size: 1400px 700px;
+          }
+        /* #map
+             {
+                 height: 400px;
+                width: 100%;
+             }  */
+            * 
+          {
+            box-sizing: border-box;
+           }
+
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 90%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 20%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .timeline::after {
+    left: 31px;
+  }
+
+
+ .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+ .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+.left::after, .right::after {
+    left: 15px;
+  }
+
+.right {
+    left: 0%;
+  }
+}
+    </style>
+
+  </head>
+  <body>
+       <div class="container-fluid" style="height:700px;">
+       <nav class="navbar navbar-light navbar-expand-lg">
+            
+                <a class="navbar-brand" href="#"><img src="download.png" style="width:40px;height:40px;color:white"><span style="font-size:20px;margin-left: 3px;color:white"><b>NitishGarg Blog</b></span></a>
+          
+                      <form class = "form-inline ml-auto flex-nowrap">
+                             <input class="form-control" type="text" placeholder="search" style="margin-right: 9px;">
+                            <button class="btn btn-warning" type="submit" style="margin-left: 2px;">Search</button>
+                      </form>
+        </nav>
+      
+          <nav class="navbar navbar-light  navbar-expand-lg">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav" >
+                        <li class="nav-item" style="margin-left: 220px;color:black">
+                            <a class="nav-link" href="home.html"><h5 style="font-family:sans-serif;color:white"><b>Homepage</b></h5></a>
+                        </li>
+                        <li class="nav-item" style="margin-left: 100px;">
+                            <a class="nav-link" href="portfolio.html"><h5 style="color:white"><b>Portfolio</b></h5></a>
+                        </li>
+                        <li class="nav-item" style="margin-left: 100px;">
+                            <a class="nav-link" href="resume.html"><h5 style="color:white"><b>Resume</b></h5></a>
+                        </li>
+                        <li class="nav-item" style="margin-left: 100px;">
+                            <a class="nav-link" href="gallery.html"><h5 style="color:white"><b>Gallery</b></h5></a>
+                        </li>
+                        <li class="nav-item" style="margin-left: 100px;">
+                            <a class="nav-link" href="about.html"><h5 style="color:white"><b>About</b></h5></a>
+                        </li>
+                    </ul>
+                </div>
+      </nav>
+
+      <hr style="margin:-20px;">
+      <br><br><br>
+          
+           <div style="width:70%;margin-left: 18%;margin-right:18%;color:white;">
+               <h1 style="margin-left: 22%;margin-right: 2%;">DISCOVER WHO I AM</h1>
+               <br><br>
+               <h1 style="margin-left: 14%;margin-right: 2%;">MY PASSIONS AND PERSONALITY</h1>
+            <br><br>
+               
+           </div>
+    </div> 
+    
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>2017</h2>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2016</h2>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div>
+    <div class="container left">
+    <div class="content">
+      <h2>2017</h2>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div>
+    <div class="container right">
+    <div class="content">
+      <h2>2016</h2>
+      <p>Lorem ipsum..</p>
+    </div>
+  </div>
+</div>
+
+
+
+   <!-- <div id="map">
+    </div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 12.975729, lng: 77.604715};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFd_AOCPpqVZFiV1TbMqiUedpt6pJXlBc&callback=initMap">
+                                                                                                            
+    </script>
+      
+      
+        <div style="background-color:lightgray; height:150px;">
+          <br>
+          <h5 style="margin-left:270px;margin-right: 250px;">© 2018 NITISH GARG. All rights reserved. Squarespace Developer  Founder of Website</h5>
+            <div>
+              <a href="https://mg.mail.yahoo.com/neo/launch?.rand=0vc4qis4e8qsl"><img src="gmail.png"style="width:30px;height:30px;margin-left: 550px;"></a>
+              <a href="https://www.youtube.com/"><img src="youtube.png" style="width:50px;height:30px;margin-left: 20px;"></a>
+             <a href="https://www.facebook.com/"><img src="facebook.png" style="width:40px;height:30px;margin-left: 20px;"></a>
+            <a href="https://www.linkedin.com/feed/?trk="><img src="link.png" style="width:30px;height:30px;margin-left: 10px;border-color: gray;"></a>
+           </div>
+      </div>
+-->
+  </body>
+</html>
