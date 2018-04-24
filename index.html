@@ -18,7 +18,10 @@
               background-image: url(homepage1.jpg);
               background-repeat: no-repeat;
               width:100%;
-              background-size: 1400px 1000px;
+                background-size: cover;
+              /* background-size: 1400px 1000px; */
+                max-width: 100%;
+                height:auto;
             }    
           </style>
   </head>
@@ -59,10 +62,10 @@
           
            <hr style="margin:-20px;">
     </div>
-      <div style="background-color: whitesmoke;height:405px;">
+      <div style="background-color: whitesmoke;height:auto;max-width:100%;">
           <br>
-          <div style="margin-left: 360px;width:60%;margin-top: 0px;">
-              <h1 style="font-size: 2em;color:black;text-shadow: 0 1px 0 #ccc, 
+          <div style="width:100%;margin-top: 0px;">
+              <h1 style="font-size: 2vw;text-align: center;color:black;text-shadow: 0 1px 0 #ccc, 
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
                0 4px 0 #b9b9b9,
@@ -76,34 +79,38 @@
                0 20px 20px rgba(0,0,0,.15);">LET'S BUILD SOMETHING  AMAZING TOGETHER</h1>
               <br>
           </div>
-          <div style="float:left;width:26%;height:280px;margin-left: 40px;"><img src="code.png" style="height:65%;width:100%;"><p style="margin-left: 4px;">These are exclusively made for front end sites and will offer custom design options with easy to understand instructions.</p></div>
           
-          <div style="float:left;width:6%;height:280px;"></div>
+          <div class="container">
+            <div class="row">
+                
+            <div style="margin-left: 40px;" class="col-md-3 float-left"><img src="code.png" style="height:65%;width:100%;"><p style="margin-left: 4px;">These are exclusively made for front end sites and will offer custom design options with easy to understand instructions.</p>
+            </div>
+                
           
-          <div style="float:left;width:26%;height:280px;"><img src="video.jpg" style="height:65%;width:100%;"><p style="margin-left: 4px;">The training will go over some great insights to help users understand how to get the most out of their Squarespace site.</p></div>
+          <div class="col-md-1"></div>
+                
+          <div  class="col-md-3 float-left"><img src="video.jpg" style="height:65%;width:100%;"><p style="margin-left: 4px;">The training will go over some great insights to help users understand how to get the most out of their Squarespace site.</p>
+          </div>
           
-          <div style="float:left;width:6%;height:280px;"></div>
+          <div class="col-md-1"></div>
           
-          <div style="float:left;width:26.5%;height:280px;background-color: white"><img src="tips.png" style="height:40%;width:40%;clear: both;margin-left: 30%;margin-top: 10%;">
-              <br><br>
-              <div style="background-color: whitesmoke;margin-top: 2px;height: 38%;"><p style="margin-left: 4px;">xLearn from my mistakes and let me show you how to accomplish unique sections of your frontend site that will impress.</p></div>
+          <div style="margin-left: 40px;" class="col-md-3 float-left"><img src="code.png" style="height:65%;width:100%;"><p style="margin-left: 4px;">Learn from my mistakes and let me show you how to accomplish unique sections of your frontend site that will impress.</p>
+            </div>
+         </div>
+      
           </div>
       </div>
       
-    
-      <br>
-        <div style="background-color:lightgray; height:150px;">
-          <br>
-          <h5 style="margin-left:270px;margin-right: 250px;">© 2018 NITISH GARG. All rights reserved. Web Developer and Founder of Website</h5>
-        <div>
+              
+        <div style="background-color:lightgray; height:auto;max-width:100%;">
+          
+           <h5 style="font-size: 1.6vw;text-align: center">© 2018 NITISH GARG. All rights reserved. Web Developer and Founder of        Website</h5>
+            <div>
               <a href="https://mg.mail.yahoo.com/neo/launch?.rand=0vc4qis4e8qsl"><img src="gmail.png"style="width:30px;height:30px;margin-left: 550px;"></a>
               <a href="https://www.youtube.com/"><img src="youtube.png" style="width:50px;height:30px;margin-left: 20px;"></a>
               <a href="https://www.facebook.com/"><img src="facebook.png" style="width:40px;height:30px;margin-left: 20px;"></a>
               <a href="https://www.linkedin.com/feed/?trk="><img src="link.png" style="width:30px;height:30px;margin-left: 10px;border-color: gray;"></a>
+            </div>
         </div>
-            
-      </div>
-
-     
   </body>
 </html>
